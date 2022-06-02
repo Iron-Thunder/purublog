@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Purulia</title>
+    </head>
+    <body>
+        <style>
+            * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+
+
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(leaguespartan-bold.woff2);
+  }
+  
+  
+   
+  
+
+body {
+    background: content-box radial-gradient(rgb(57, 49, 167), rgb(17, 1, 43));
+}
+
+header {
+    z-index: 999;
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    transition: 0.5s ease;
+
+
+}
+
+.name {
+    color: white;
+    font-weight: 700;
+    font-family: cursive;
+    background-color: darkviolet;
+    padding: 0px 2px;
+    border-radius: 100%;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+ .brand {
+    color: white;
+    font-weight: 300;
+    font-family: cursive;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+
+header .navigation .nav_item a {
+    position: relative;
+    font-size: 1em;
+    font-family: cursive;
+    color: rgb(250, 246, 246);
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navigation .nav_item a:before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navigation .nav_item a:hover:before {
+    width: 100%;
+}
+
+.home {
+
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 110px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    width: 100%;
+
+    display: flex;
+
+}
+.icons{
+    margin-top: 5vw;
+}
+.icons i,.icons2 i{
+    margin: 10px;
+    font-size: 22px;
+}
+
+
+.home img {
+    width: 42vw;
+
+}
+
+
+.content h1 {
+    color: antiquewhite;
+    font-size: 7vw;
+    margin-top: 10px;
+    font-family: myFirstFont;
+}
+
+.content h2 {
+    color: aqua;
+    font-family: myFirstFont;
+    font-size: 2vw;
+}
+.content h3{
+    color: aqua;
+    font-family: myFirstFont;
+    font-size: 2vw;
+}
+
+
+@media (max-width:1080px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    header .navigation {
+        display: none;
+    }
+   
+
+    header .navigation.active {
+        position: fixed;
+        height: 100%;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(1, 1, 1, 0.5);
+
+    }
+
+    header .navigation .nav_item a {
+        color: #222;
+        margin: 20px;
+        font-style: 1.2em;
+    }
+
+    header .navigation.active .nav_item {
+        background: #fff;
+        width: 600px;
+        min-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0px 5px 25px rgba(1 1 1 /20%);
+    }
+
+    header .navigation .nav_item a:before {
+        background: #222;
+        height: 2px;
+
+    }
+
+    .menu-btn {
+        background: url('close.png') no-repeat;
+        background-position: center;
+        background-size: 30px;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        transition: 0.3s ease;
+    }
+    .product-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0%;
+
+    }
+    .menu-btn.active {
+        z-index: 999;
+        background: url(menu.png) no-repeat;
+        background-size: 32px;
+        background-position: center;
+        transition: 0.3s ease;
+
+    }
+
+    .about {
+        flex-direction: column;
+      
+    }
+
+    .map img {
+        width: fit-content;
+        min-width: 70vw;
+        max-width: 75vw;
+    }
+
+    .details h3 {
+        padding: -20px;
+
+    }
+
+    .ayodhya {
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .ayodhya .place-image img {
+        width: fit-content;
+        min-width: 80vw;
+        max-width: 85vw;
+    }
+    .donate-container{
+        flex-direction: column;
+    }
+    .paypal,.buycofee{
+        display: flex;
+    }
+    .home img{
+        width: 70vw;
+        margin-top: 30px;
+    }
+    .home{
+        flex-direction: column;
+    }
+    .content{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .content h1{
+        font-size: 50px;
+    }
+}
+
+
+.header {
+    height: 100vh;
+}
+
+
+
+
+
+.about {
+
+    height: fit-content;
+    min-height: 100vh;
+    max-width: fit-content;
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.about-text {
+    margin-bottom: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+}
+
+.about-text u {
+    font-family: cursive;
+}
+
+.details {
+    margin-top: 0vh;
+    max-width: 100vw;
+    padding: 5%;
+}
+.product-mobile{
+    display: flex;
+}
+.details .det {
+    width: fit-content;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+
+.details h3, h5 {
+    margin: 8px;
+    font-family: cursive;
+    color: aliceblue;
+}
+
+.details h3 li {
+    font-family: cursive;
+    color: aliceblue;
+}
+
+.map img {
+    height: auto;
+    width: 35vw;
+    padding: 5%;
+
+    max-width: 75vw;
+
+    margin-top: 0;
+}
+
+.place {
+    text-align: center;
+}
+
+.place-item {
+
+    width: 100%;
+    height: fit-content;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.ayodhya {
+
+    height: auto;
+    width: 94vw;
+    background-color: rgb(54, 43, 92);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(48, 12, 116);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 2vw;
+    margin: 2vw;
+}
+
+.ayodhya .place-image img {
+    height: auto;
+    width: 45vw;
+    padding: 2%;
+    border-radius: 1vw;
+    max-width: 75vw;
+
+    margin-top: 0;
+}
+
+.place-details-det {
+    width: fit-content;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: cursive;
+    color: rgb(151, 176, 204);
+}
+.product-item{
+    margin: 1.3vw;
+}
+.product-container{
+    margin: 0px 20px;
+    display: flex;
+}
+.donate{
+  margin: 5vw 15vw;
+}
+.donate-container{
+    width: 70vw;
+    display: flex;
+    background-color: rgb(245, 250, 248);
+    padding: 22px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.donate-container img{
+    width: 20vw;
+    height: auto;
+}
+.donate-medium{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.deta{
+    
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 20px;
+    font-family: cursive;
+    color: rgb(4, 23, 44);
+    text-align: center;
+}
+.paypal,.buycofee{
+    background-color: blueviolet;
+    padding: 1.4vh 5vw;
+    margin: 10px;
+    border-radius: 10px;
+    outline: none;
+    color: aliceblue;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+}
+.footer{
+    background-color: rgb(9, 3, 24);
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.icons2{
+    margin: 10px;
+}
+
+        </style>
+
+        <section class="main-page">
+            <header>
+                <a href="#" class="brand"><span class="name">P</span>urulia</a>
+                <div class="menu-btn"></div>
+                <div class="navigation">
+                    <div class="nav_item">
+                        <a href="#">About</a>
+                        <a href="#">Destination</a>
+                        <a href="#">Local Product</a>
+                        <a href="#">Donate</a>
+
+                    </div>
+                </div>
+            </header>
+
+            <section class="home">
+               
+                <div class="content">
+                    <h2>Welcome To</h2>
+                    <h1>PURULIA</h1>
+                    <h3>A city of Love</h3>
+                    <div class="icons">
+                        <a href=""><i class="fa fa-1.5x fa-location-arrow"
+                                style="color: yellow;"></i></a>
+                        <a href=""><i class="fa fa-2x fa-instagram"
+                                style="color: palevioletred;"></i></a>
+                        <a href=""><i class="fa fa-2x fa-twitter"
+                                style="color:rgb(80, 80, 247);"></i></a>
+                        <a href=""><i class="fa fa-2x fa-facebook" style="color:
+                                cornflowerblue;"></i></a>
+                        <a href=""><i class="fa fa-2x fa-youtube" style="color:
+                                red;"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <img src="final.png" alt="">
+                </div>
+            </section>
+        </section>
+        <section class="about">
+            <div class="details">
+                <h1 class="about-text"><u>About Purulia</u></h1>
+                <p class="det">Purulia is a land of natural beauty.
+                    The lush green landscape, verdant hills and dense
+                    forests make it a perfect tourist destination that gives
+                    a rustic ambience and peaceful surroundings to weary city
+                    dwellers.
+                    This westernmost district of West Bengal unravels her
+                    untapped mystery and wondrous beauty.
+                    The landscape is rocky and undulating. The tourism of
+                    Purulia centres round its hills,
+                    forests as well as its archeological excavations and the
+                    relics of ancient buildings and temples.
+                    Tribal ethos enriches the mystic charm and natural beauty of
+                    this land of red soil and red blooms of Palash.
+                    The region is home to different tribal communities like
+                    Santhals, Kurmis,
+                    Kherias-Sabars to name a few. Song and dance are an
+                    intrinsic part in the lives of the tribal people.
+
+                </p>
+                <h3><li>Area: 6,259 km²</li></h3>
+                <h3><li>Population: 3,120,484 (as per uidai.gov.in 2020)</li></h3>
+                <h3><li>Native Language: Bengali,Kudmali</li></h3>
+                <h5>To know more visit purulia.nic.in <a
+                        href="http://purulia.gov.in/"> <i class="fa
+                            fa-external-link"></i></a></h5>
+
+            </div>
+            <div class="map">
+                <img src="purulia.png" alt="Wait..">
+            </div>
+        </section>
+        <section class="place">
+            <h1 class="about-text"><u>Top Tourist Destination</u></h1>
+            <div class="place-item">
+                <div class="ayodhya">
+                    <div class="place-details">
+                        <h1 class="about-text"><u>Ayodhya Hill</u></h1>
+                        <p class="place-details-det">Ayodhya Hills is a hill
+                            located in the Purulia district. It is a part of the
+                            Dalma Hills and extended part of Eastern Ghats
+                            range. Highest peak of Ajodhya Hills is Gorgaburu.
+                            The nearest populated town is Bagmundi. It is a
+                            popular place for young mountaineers to learn the
+                            basic course in rock climbing. There are two routes
+                            available to reach Ajodhya Hills. One is via Jhalda
+                            and the other one is via Sirkabad. There is a Forest
+                            Rest House here. Gorgaburu (855 m), Mayuri etc. are
+                            of the some of the peaks of Ajodhya hills range. The
+                            area forms the lowest step of the Chota Nagpur
+                            Plateau. The general scenario is undulating land
+                            with scattered hills. The area around Bagmundi or
+                            Ajodhya Hill is an extended plateau.</p>
+                        <h3 class="about-text"><u>How to reach</u></h3>
+                        <p class="place-details-det">
+                            Ayodhya Hill is about 260 km from Kolkata, 42 km
+                            from Purulia town. Durgapur Expressway connects
+                            Purulia to Kolkata.
+                            Several trains to Purulia are available from Howrah.
+                            Buses are also available from Kolkata.
+                        </p>
+                    </div>
+                    <div class="place-image">
+                        <img
+                            src="https://image3.mouthshut.com/images/Restaurant/Photo/-68482_11049.jpg"
+                            alt="Ayodhya-hill">
+                    </div>
+
+                </div>
+
+                <div class="ayodhya">
+                    <div class="place-image">
+                        <img
+                            src="http://www.weekendtripskolkata.com/uploads/area/Garpanchkot1.jpg"
+                            alt="Garpanchkot">
+                    </div>
+                    <div class="place-details">
+                        <h1 class="about-text"><u>Garpanchkot</u></h1>
+                        <p class="place-details-det">Situated at the foothill of
+                            Panchakot (panchet hill), in the north east corner
+                            of the Purulia District,close to the boundary with
+                            district Burdwan and JharKhand.Hilltop offers
+                            picturesque and panoramic view of the
+                            command area of the Panchet dam on Damodar River and
+                            its reservior. Bird watching on Panchet dam is a
+                            treat to the eye.
+
+                        </p>
+                        <h3 class="about-text"><u>How to reach</u></h3>
+                        <p class="place-details-det">
+                            Tourists travelling by train, get down at the
+                            stations of Barakor or Asansol and take a trekker to
+                            cover an hour long path to reach Gar Panchakat. Can
+                            also take the car route by driving along the
+                            National Highway 2. After crossing Asansol, turn
+                            left and takes the road leading to Raghunathpur.
+                            After reaching the Satbari stop, destination is few
+                            km away by the village path.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="ayodhya">
+                    <div class="place-details">
+                        <h1 class="about-text"><u>Joychandi Hill</u></h1>
+                        <p class="place-details-det">A major attraction for
+                            ardent rock climbers, Joychandi Pahar (Hill) is
+                            still a pretty unexplored entity. The hill is named
+                            after Chandi Ma (Goddess Chandi). A small temple
+                            dedicated to her stands on top of this hill. There
+                            are a number of small lakes and an abandoned tower
+                            nearby, which apparently was used by dacoits in
+                            older days. One has to climb 400 steps to reach the
+                            top, which can be taxing. Since the area is quite
+                            dry and barren, you wouldn't find any source of
+                            drinking water. The place remains quite hot, and is
+                            at a significant distance from the nearest village,
+                            so please carry plenty of water with you.</p>
+                        <h3 class="about-text"><u>How to reach</u></h3>
+                        <p class="place-details-det">
+                            To reach this place one has to take a bus from
+                            Purulia to Raghunathpur. There are hardly any
+                            lodging facilities, but you will get some quick
+                            bites at the roadside restaurants. Tuk-tuks will
+                            take you till the start of the trek. Please set a
+                            time with the driver to pick you up froom here as
+                            you won't find any public conveyance here. </p>
+                    </div>
+                    <div class="place-image">
+                        <img
+                            src="https://image3.mouthshut.com/images/imagesp/925753164s.jpg"
+                            alt="Joychandi Hill">
+                    </div>
+
+                </div>
+
+                <div class="ayodhya">
+                    <div class="place-image">
+                        <img
+                            src="https://www.outlookindia.com/outlooktraveller/public/uploads/editor/2018-08-22/1534934979-grand-deul-banda-purulia-west-bengal.jpg"
+                            alt="Cheliama">
+                    </div>
+                    <div class="place-details">
+                        <h1 class="about-text"><u>Cheliama</u></h1>
+                        <p class="place-details-det">Cheliama is considered as
+                            one of the most popular destinations in Purulia. It
+                            has a rich history and is also known as a paradise
+                            for historians and archaeologists. The village has
+                            remnants of civilization in the region dating to the
+                            17th century. Temple's aroud the village are good
+                            example of the architecture, artistry and culture of
+                            their eras and this is seen in the figurines and
+                            carvings in these temples. Apart from this, the
+                            renowned Radha-Govinda Temple in Cheliama attracts
+                            many tourists.
+
+                            One of the famous tourist spots in Purulia, Cheliama
+                            is a paradise for historians and archeologists,
+                            thanks to its rich history. The village has remnants
+                            of the contemporary civilization of the 17th
+                            century. The terracotta figurines and exclusive
+                            carvings around the temples vouch for the fact that
+                            the village had been an important landmark during
+                            the yesteryears. Apart from this, the well-known
+                            Radha-Govinda Temple in Cheliama attracts a mass of
+                            tourists and is a focal place, depicting the Bengali
+                            culture prevalent in the contemporary era.
+
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="ayodhya">
+                    <div class="place-details">
+                        <h1 class="about-text"><u>Para</u></h1>
+                        <p class="place-details-det">Para is a popular tourist
+                            destination and also a village that is known to have
+                            heralded the arrival of Muslims to the east. The
+                            district is home to two pre-Muslim deuls; one is in
+                            sync with the temple in Deulghat and the other
+                            belongs to a later period. Both of them prove to be
+                            good examples of the architecture and artistry of
+                            their ages. The inheritance buildings remind one of
+                            the bygone eras.
+
+                            Para is an excellent tourist spot and also a village
+                            that reminds you of the advent of Muslims to the
+                            east. The region houses two pre-Muslim deuls - while
+                            one is in sync with the temple in Deulghat, the
+                            other belongs to a later period. Both of them prove
+                            to be excellent examples of the grand architecture
+                            and fine cravings employed in the yesteryears.
+                            Though almost a century old now, these relics have a
+                            beauty of their own. The heritage buildings would
+                            surely take tourist to the former era.</p>
+
+                    </div>
+                    <div class="place-image">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Deuls_of_Para_in_Purulia._01.jpg/345px-Deuls_of_Para_in_Purulia._01.jpg"
+                            alt="Para">
+                    </div>
+
+                </div>
+
+                <div class="ayodhya">
+                    <div class="place-image">
+                        <img
+                            src="https://th.bing.com/th/id/R.7cd1392f7538c603a6017a8ec37fd925?rik=Ovt9IHMLafrMIw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-vgJFTpxXdFg%2fUoyY9vtawnI%2fAAAAAAAAAt0%2fPLc5i6Czajo%2fs1600%2f03metdeul1_181509.jpg&ehk=pusXOXGpanaf8PfG1yK791wQMYQVYMlv%2fG10eiA05QY%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
+                            alt="Deulghata">
+                    </div>
+                    <div class="place-details">
+                        <h1 class="about-text"><u>Deulghata</u></h1>
+                        <p class="place-details-det">Deulghat is considered as a
+                            land of temples. The place is home to approximately
+                            15 temples that are close to the Kansai River. This
+                            region is known for the architecture and the
+                            intricacy in carvings and decorations in its
+                            temples.
+
+                            Deulghat, keeping up to its name, is the land of
+                            temples. The place is home to about 15 temples near
+                            the Kansai River. The awe-striking architecture of
+                            the temple, coupled with graceful carvings, is one
+                            of the prime reasons why Deulghat is one of the
+                            favorite spots to visit in Purulia. The temple
+                            reflects the traditional culture of the contemporary
+                            people. Though there is nothing but ruins left in
+                            the temple, Deulghat still continues to be an
+                            important tourist center.
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="ayodhya">
+                    <div class="place-details">
+                        <h1 class="about-text"><u>Matha</u></h1>
+                        <p class="place-details-det">The Matha Buru is slopes
+                            known for stylish excellence. There is a “Mela” on
+                            the slope by tribal groups. The camp and Rock
+                            climbing courses directed by the distinctive
+                            association generally around winter season. The
+                            number of camp is 31 and more than 2000 school and
+                            college students took part. Forest protection
+                            committee individuals are providing food to camp and
+                            some of them go as neighborhood aides. </p>
+
+                    </div>
+                    <div class="place-image">
+                        <img
+                            src="https://i1.wp.com/travelwithabong.com/wp-content/uploads/2019/12/IMG_20180921_141031.jpg?fit=768%2C576&ssl=1"
+                            alt="Matha">
+                    </div>
+
+                </div>
+
+                <div class="ayodhya">
+                    <div class="place-image">
+                        <img
+                            src="https://www.notintown.net/userfiles/images/2(759).jpg"
+                            alt="Baghmundi">
+                    </div>
+                    <div class="place-details">
+                        <h1 class="about-text"><u>Baghmundi</u></h1>
+                        <p class="place-details-det">Baghmundi is a small
+                            community development block located in the
+                            administrative division of Purulia. Every year
+                            thousands of tourists visit this place to witness
+                            the natural beauty of the magnificent Ayodhya Hills
+                            and the many dams. The picturesque landscape here
+                            consists of undulating hills, cascading waterfalls,
+                            lush green forests with rich variety of flora and
+                            fauna. Travelers can get a variety of experience
+                            from historical and archeological sites to eco
+                            tourism.
+
+                            Ayodhya Hill, not very far from Baghmundi, is of
+                            immense mythological significance to the Hindus. It
+                            is believed that Lord Ram with his wife Sita had
+                            come to Ayodhya Hill during their exile. Lord Ram
+                            had pierced the earth with his arrow to bring out a
+                            gush of water to quench Sita's thirst. From then,
+                            this place has been named Sita-kunda.On a Baisakhi
+                            full moon day, tribals from surrounding villages
+                            assemble here to join the game of hunting
+                            animals.They hunt small animals like rabbits and
+                            jungle hen.
+
+                        </p>
+                        <h3 class="about-text"><u>How to reach</u></h3>
+                        <p class="place-details-det">
+                            There is no railway station near to Baghmundi in
+                            less than 10 km. However Bokaro Steel City Rail Way
+                            Station is major railway station 55 km near to
+                            Baghmundi.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="ayodhya">
+                    <div class="place-details">
+                        <h1 class="about-text"><u>Baranti</u></h1>
+                        <p class="place-details-det">Baranti is a small, quiet
+                            and scenic place. There is a 2 km long irrigation
+                            project dam, located between two small hillocks,
+                            Muradi Hill and Baranti Hill. Baranti is in the
+                            vicinity of Ramchandrapur Irrigation Project. One
+                            gets a grand view of the reservoir from Baranti. It
+                            is a place where one can take a break from drudgery
+                            and daily monotony and simply rejuvenate one's mind
+                            and soul. It is part of the wonderful Rarh
+                            countryside. Baranti is also a picnic spot where
+                            people from nearby areas come for a day-long picnic.</p>
+                        <h3 class="about-text"><u>How to reach</u></h3>
+                        <p class="place-details-det">
+                            Have to get down at Muradi Station via Asansol. From
+                            there, tourist can avail a rickshaw or trekker to
+                            reach Boranti just 6 km away. In case traveling by
+                            car need to get off the highway and enter Asansol
+                            and then, drive straight towards Ramchandrapur. The
+                            distance between the city and Muradi more (crossing)
+                            on road is around 15 km. Next, need to drive along
+                            the village road that leads to Baranti.
+                        </p>
+                    </div>
+                    <div class="place-image">
+                        <img
+                            src="https://media-cdn.tripadvisor.com/media/photo-s/08/22/27/8f/baranti.jpg"
+                            alt="Baranti">
+                    </div>
+
+                </div>
+
+                <div class="ayodhya">
+                    <div class="place-image">
+                        <img
+                            src="https://www.indiamike.com/files/images/05/66/41/khairabera.jpg"
+                            alt="khairabera">
+                    </div>
+                    <div class="place-details">
+                        <h1 class="about-text"><u>khairabera</u></h1>
+                        <p class="place-details-det">Purulia is a tropical
+                            region of West Bengal, which lies in the westernmost
+                            district of the state. Spread over more than a
+                            territory of 6,259 sq km, the area imparts its limit
+                            to Bankura, Paschim Medinipur, Bardhaman, Dhanbad,
+                            Bokaro, Ranchi, West Singhbhum and East Singhbhum
+                            locale. This westernmost area of West Bengal gives
+                            access to the modern belts of West Bengal.
+                            Khairabera Lake is situated in Purulia District,
+                            West Bengal, India.Road Distance or driving distance
+                            from Purulia to Khairabera Dam is 67 kms. This is an
+                            Irrigation Dam amidst slopes and woods at Baghmundi.
+                            It is a very charming spot which appeals visitors to
+                            visit here.
+
+                            There are many things which are attracted for
+                            sightseers for their serenity, geology, falls,
+                            streams, different vegetation and so on and with its
+                            natural beauty of this place. Bamni falls is one of
+                            the significant attractions of this spot. Stay
+                            fragmented with the visit to this wondrous heaven of
+                            this spot of West Bengal.It is one of the best spot
+                            and not to be barred from the schedule.
+
+
+
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="ayodhya">
+                    <div class="place-details">
+                        <h1 class="about-text"><u>Tugga and Bramni Falls</u></h1>
+                        <p class="place-details-det">Tugga and Bramni falls near
+                            Baghmundi are favorite picnic spots. These dams are
+                            set in picturesque locales. The area is covered by
+                            tall Sal trees which bear testimony to the history
+                            of the place. The rich flora is the home to many
+                            varieties of birds. This is a perfect place to enjoy
+                            a lazy day with family and friends.</p>
+
+                    </div>
+                    <div class="place-image">
+                        <img
+                            src="https://qph.fs.quoracdn.net/main-qimg-46d34249c344a37f87464d328ea4071d"
+                            alt="Tugga and Bramni Falls">
+                    </div>
+
+                </div>
+
+                <div class="ayodhya">
+                    <div class="place-image">
+                        <img
+                            src="https://i1.wp.com/travelwithabong.com/wp-content/uploads/2019/12/12311038_1136275616431293_5860152907514433389_n.jpg?fit=960%2C576&ssl=1"
+                            alt="Murguam Dam">
+                    </div>
+                    <div class="place-details">
+                        <h1 class="about-text"><u>Murguma Dam</u></h1>
+                        <p class="place-details-det">It is a tribal town. The
+                            spot can be reached via auto from both Purulia and
+                            Jharkhand stations. To visit Kenkechi Hill, Murguma
+                            Dam Lake and woods are beneficial. The winter season
+                            is perfect for them who appreciate cold evenings.
+                            Visiting the spot in the winter season adequate warm
+                            garments should be brought as the temperature after
+                            nightfalls floats around 5 to 6 degree Celsius
+                            during evening it drops down to 3 degree Celsius.
+                            The dam is very deep. The visitors who does not know
+                            how to swim they should avoid. It is a very nice
+                            experience in your life if you visit at full moon
+                            night. Trek through jungle to a neighbouring tribal
+                            village or walk to a hill top is very much enjoyable
+                            for its surrounding greenery.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="ayodhya">
+                    <div class="place-details">
+                        <h1 class="about-text"><u>Duarsini</u></h1>
+                        <p class="place-details-det">Just 13 km from Burdwan in
+                            the Puruliya district, Duarsini is a small tribal
+                            village. The whole attraction of this village lies
+                            in its picturesque setting surrounded by rolling
+                            hills and lush greenery of the Dalma Hills. Wildlife
+                            enthusiasts will especially love this place as the
+                            Dalma Forest contains a plethora of wildlife like
+                            bears, wolves, boars and many known and unknown bird
+                            species. Sometimes one can even spot elephants
+                            coming out of the forest into Duarsini.
+
+                            A wonderful way to relax and unwind is to spend some
+                            quiet time on the banks of the Satgurang River that
+                            flows past Duarsini. This is a perfect getaway if
+                            you are tired of all the touristy and crowded
+                            places. At night you will hear the rhythmic beats of
+                            madol(drums), reverberating in the air. There are a
+                            number of tribal villages in the area pertaining to
+                            Santhals, Shabaradh, Kheriya and Munda tribes.This
+                            place has no electricity and no accommodation
+                            facilities except for 3 cottages run by West Bengal
+                            Forest Department. The cottages resemble traditional
+                            tribal cottages.</p>
+                    </div>
+                    <div class="place-image">
+                        <img
+                            src="https://noisebreak.com/wp-content/uploads/2016/08/duarsini.jpg"
+                            alt="Duarsini">
+                    </div>
+
+                </div>
+
+                <div class="ayodhya">
+                    <div class="place-image">
+                        <img
+                            src="https://image3.mouthshut.com/images/Restaurant/Photo/-29814_9861.jpg"
+                            alt="Saheb Bandh">
+                    </div>
+                    <div class="place-details">
+                        <h1 class="about-text"><u>Saheb Bandh</u></h1>
+                        <p class="place-details-det">Saheb Bandh is a 50 acre
+                            lake in Purulia, that is known to have been
+                            constructed in the mid 19th century. It is said this
+                            water body was dug by convicts, at the instigation
+                            of Colonel Tikley, during the British Raj. This
+                            process was started in the year 1843 and took five
+                            years for it to be completed. Now, Saheb Bandh is
+                            also considered as a home for migratory birds.
+                            During the migratory season, birds fly from
+                            Baluchistan, Siberia and several places in Europe,
+                            to this place. Thus, for local birdwatchers, Saheb
+                            Bandh is a popular retreat.
+
+                            A 50-acre lake, Saheb Bandh poses as one of the most
+                            enigmatic locations in Purulia. Talking about the
+                            history of the place, it is believed to have been
+                            built during the mid-19th century. It is believed
+                            that convicts, at the instigation of Colonel Tikley,
+                            dug this water body. They started the process in the
+                            year 1843. It took five years for the water body to
+                            be constructed. Today a beautiful and mesmeric
+                            location, Saheb Bandh also acts as a temporary home
+                            for migratory birds.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="ayodhya">
+                    <div class="place-details">
+                        <h1 class="about-text"><u>Surulia</u></h1>
+                        <p class="place-details-det">A popular picnic spot for
+                            travellers, Surulia has been developed by the forest
+                            department and is popular amongst eco tourists.</p>
+                        <h3 class="about-text"><u>How to reach</u></h3>
+                        <p class="place-details-det">Just 6 km away from the
+                            main town, the Eco Park is located on the bank on
+                            the bank of the river Kangsabati, it has a deer park
+                            and tourism cottage inside and it is visited in huge
+                            numbers by the visitors.
+
+                        </p>
+                    </div>
+                    <div class="place-image">
+                        <img
+                            src="https://travellersinindia.com/wp-content/uploads/2020/11/Beautiful_Green_Madhabkunda_Eco-Park-e1604561784313.jpg"
+                            alt="Surulia">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <h1 class="about-text" style="text-align: center;"><u>Local Product</u></h1>
+        <section class="product">
+            
+            <div class="product-container">
+                <div class="product-mobile">
+                    <div class="product-item"> <iframe
+                            style="width:120px;height:240px;" marginwidth="0"
+                            marginheight="0" scrolling="no" frameborder="0"
+                            src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mukesh01e5-21&language=en_IN&marketplace=amazon&region=IN&placement=B08QCTF485&asins=B08QCTF485&linkId=e1caa65115aab5d6a7a111ea55fb6016&show_border=true&link_opens_in_new_window=true"></iframe>
+                    </div>
+                    <div class="product-item"><iframe
+                            style="width:120px;height:240px;" marginwidth="0"
+                            marginheight="0" scrolling="no" frameborder="0"
+                            src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mukesh01e5-21&language=en_IN&marketplace=amazon&region=IN&placement=B08G14SLLL&asins=B08G14SLLL&linkId=c208123dbe2d260861bde4a6de384102&show_border=true&link_opens_in_new_window=true"></iframe></div>
+                </div>
+                <div class="product-mobile">
+                    <div class="product-item"><iframe
+                            style="width:120px;height:240px;" marginwidth="0"
+                            marginheight="0" scrolling="no" frameborder="0"
+                            src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mukesh01e5-21&language=en_IN&marketplace=amazon&region=IN&placement=B08T8KPW1P&asins=B08T8KPW1P&linkId=18a5ec45392601563930728670a00974&show_border=true&link_opens_in_new_window=true"></iframe></div>
+                    <div class="product-item"><iframe
+                            style="width:120px;height:240px;" marginwidth="0"
+                            marginheight="0" scrolling="no" frameborder="0"
+                            src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mukesh01e5-21&language=en_IN&marketplace=amazon&region=IN&placement=B08MD5J7Z5&asins=B08MD5J7Z5&linkId=19de8d295ad12412f00f60204507ec9d&show_border=true&link_opens_in_new_window=true"></iframe></div>
+                </div>
+                <div class="product-mobile"> <div class="product-item"><iframe
+                            style="width:120px;height:240px;" marginwidth="0"
+                            marginheight="0" scrolling="no" frameborder="0"
+                            src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mukesh01e5-21&language=en_IN&marketplace=amazon&region=IN&placement=B08T8KPW1P&asins=B08T8KPW1P&linkId=3ace6f1ebc1392735104f2345a928324&show_border=true&link_opens_in_new_window=true"></iframe></div>
+                    <div class="product-item"><iframe
+                            style="width:120px;height:240px;" marginwidth="0"
+                            marginheight="0" scrolling="no" frameborder="0"
+                            src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mukesh01e5-21&language=en_IN&marketplace=amazon&region=IN&placement=B0912MJLBW&asins=B0912MJLBW&linkId=5721f3f68bc54cb8ae4b10a22a9eff7a&show_border=true&link_opens_in_new_window=true"></iframe></div>
+                </div>
+                <div class="product-mobile">
+                    <div class="product-item"><iframe
+                            style="width:120px;height:240px;" marginwidth="0"
+                            marginheight="0" scrolling="no" frameborder="0"
+                            src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mukesh01e5-21&language=en_IN&marketplace=amazon&region=IN&placement=B08RJTYXGN&asins=B08RJTYXGN&linkId=807013bb7de4a8591ff478f42d42c40b&show_border=true&link_opens_in_new_window=true"></iframe></div>
+                    <div class="product-item"><iframe
+                            style="width:120px;height:240px;" marginwidth="0"
+                            marginheight="0" scrolling="no" frameborder="0"
+                            src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mukesh01e5-21&language=en_IN&marketplace=amazon&region=IN&placement=B07QL3B85V&asins=B07QL3B85V&linkId=a0b8b723e0468dd754a3a5df6f84c9dc&show_border=true&link_opens_in_new_window=true"></iframe></div>
+                </div>
+
+            </div>
+            <div class="product-container">
+                <div class="product-mobile"> <div class="product-item"><iframe
+                            style="width:120px;height:240px;" marginwidth="0"
+                            marginheight="0" scrolling="no" frameborder="0"
+                            src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mukesh01e5-21&language=en_IN&marketplace=amazon&region=IN&placement=B079DPXPL9&asins=B079DPXPL9&linkId=d78341112c41fc1a2ff2997844bddae7&show_border=true&link_opens_in_new_window=true"></iframe></div>
+                    <div class="product-item"><iframe
+                            style="width:120px;height:240px;" marginwidth="0"
+                            marginheight="0" scrolling="no" frameborder="0"
+                            src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mukesh01e5-21&language=en_IN&marketplace=amazon&region=IN&placement=B09SHSX49R&asins=B09SHSX49R&linkId=63895c31e43ee1e80d4f2b447f9a7a70&show_border=true&link_opens_in_new_window=true"></iframe></div>
+                </div>
+                <div class="product-mobile"> <div class="product-item"><iframe
+                            style="width:120px;height:240px;" marginwidth="0"
+                            marginheight="0" scrolling="no" frameborder="0"
+                            src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mukesh01e5-21&language=en_IN&marketplace=amazon&region=IN&placement=B09RVXQJNK&asins=B09RVXQJNK&linkId=448b8bd3f503a36cd988ac9c70a0059a&show_border=true&link_opens_in_new_window=true"></iframe></div>
+                    <div class="product-item"><iframe
+                            style="width:120px;height:240px;" marginwidth="0"
+                            marginheight="0" scrolling="no" frameborder="0"
+                            src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mukesh01e5-21&language=en_IN&marketplace=amazon&region=IN&placement=B07LF3PQYF&asins=B07LF3PQYF&linkId=585ac65afba60d217539dc5565e4e843&show_border=true&link_opens_in_new_window=true"></iframe></div>
+                </div>
+
+                <div class="product-mobile"> <div class="product-item"><iframe
+                            style="width:120px;height:240px;" marginwidth="0"
+                            marginheight="0" scrolling="no" frameborder="0"
+                            src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mukesh01e5-21&language=en_IN&marketplace=amazon&region=IN&placement=B07L5DDYN1&asins=B07L5DDYN1&linkId=2e2975b99b5cf36c925f79c88b9b2557&show_border=true&link_opens_in_new_window=true"></iframe></div>
+                    <div class="product-item">
+                        <iframe style="width:120px;height:240px;"
+                            marginwidth="0"
+                            marginheight="0" scrolling="no" frameborder="0"
+                            src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mukesh01e5-21&language=en_IN&marketplace=amazon&region=IN&placement=B07Q8XKVC9&asins=B07Q8XKVC9&linkId=6c1690628c314773267a45379eb3529f&show_border=true&link_opens_in_new_window=true"></iframe>
+                    </div>
+                </div>
+                <div class="product-mobile">
+                    <div class="product-item"><iframe
+                            style="width:120px;height:240px;" marginwidth="0"
+                            marginheight="0" scrolling="no" frameborder="0"
+                            src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mukesh01e5-21&language=en_IN&marketplace=amazon&region=IN&placement=B08FG9QZ64&asins=B08FG9QZ64&linkId=4ae2251387eb77c46b7ab9eef215b5fe&show_border=true&link_opens_in_new_window=true"></iframe></div>
+                    <div class="product-item"><iframe
+                            style="width:120px;height:240px;" marginwidth="0"
+                            marginheight="0" scrolling="no" frameborder="0"
+                            src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mukesh01e5-21&language=en_IN&marketplace=amazon&region=IN&placement=B09JKTTG8P&asins=B09JKTTG8P&linkId=4c8c51f7958c2bb67bc473226294e129&show_border=true&link_opens_in_new_window=true"></iframe></div>
+                </div>
+               
+
+            </div>
+
+        </section>
+        <section class="donate">
+            <h1 class="about-text" style="text-align: center;"><u>Donate</u></h1>
+            <div class="donate-container">
+                <img
+                    src="https://caplanc.org/wp-content/uploads/2019/01/donate-1.jpg"
+                    alt="Donate">
+                <div class="donate-medium">
+                    <p class="deta">I am a student and a Web Devloper of
+                        Bokaro.
+                        Currently doing B.Tech from Haldia Institute of
+                        Technology,Purba Mednipur.
+                        I have shown my love towerds a beautiful place Purulia.
+                        If you find my work as valuable then
+                        you can support me via these medium of donation.
+                    </p>
+                    <p class="deta">Upi id: puruliadevloper@apl</p>
+                    <a href="#" class="paypal">Donate via Paypal</a>
+                    <a href="#" class="buycofee">Buy me a Cofee</a>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="profile" style="margin: 10px;"> <a href="#"
+                    class="brand"><span class="name">A</span>kash Jha</a>
+                <h3 class="brand" style="color: rgb(167, 169, 172); padding:
+                    10px;">akashranipokhar@gmail.com</h3>
+                <div class="icons2">
+                    <a href=""><i class="fa fa-1.5x fa-location-arrow"
+                            style="color: yellow;"></i></a>
+                    <a href=""><i class="fa fa-2x fa-instagram"
+                            style="color: palevioletred;"></i></a>
+                    <a href=""><i class="fa fa-2x fa-twitter"
+                            style="color:rgb(80, 80, 247);"></i></a>
+                    <a href=""><i class="fa fa-2x fa-facebook" style="color:
+                            cornflowerblue;"></i></a>
+                    <a href=""><i class="fa fa-2x fa-youtube" style="color:
+                            red;"></i></a>
+                </div>
+            </div>
+
+            <div class="contact"></div>
+        </section>
+        <script>
+            const menuBtn=document.querySelector(".menu-btn");
+            const navigation=document.querySelector(".navigation");
+            menuBtn.addEventListener("click",() => {
+             menuBtn.classList.toggle("active");
+             navigation.classList.toggle("active");
+            });
+        </script>
+        <script src="./app.js"></script>
+    </body>
+</html>
